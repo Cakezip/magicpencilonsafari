@@ -26,3 +26,5 @@ If you use GitHub Pages:
 
 The support email is already configured in `support.html` as:
 - `vusghwkd@snu.ac.kr`
+
+Last repository-side Pages trigger update: 2026-04-14
