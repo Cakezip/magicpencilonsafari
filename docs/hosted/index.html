@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic Pencil</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+            color: #17120d;
+            background:
+                radial-gradient(circle at top, rgba(223, 197, 164, 0.45), transparent 38%),
+                linear-gradient(180deg, #f8f2e9 0%, #f1e7d7 100%);
+        }
+
+        main {
+            width: min(860px, calc(100% - 32px));
+            margin: 48px auto;
+            padding: 32px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 24px 60px rgba(34, 20, 9, 0.12);
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+        }
+
+        h2 {
+            margin-top: 32px;
+            color: #281d12;
+        }
+
+        p, li {
+            color: #5d5044;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: grid;
+            gap: 18px;
+        }
+
+        .badge {
+            display: inline-flex;
+            width: fit-content;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(233, 196, 149, 0.28);
+            color: #6a4929;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .actions a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 168px;
+            padding: 14px 18px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .primary {
+            background: #17120d;
+            color: #fffaf3;
+        }
+
+        .secondary {
+            background: rgba(23, 18, 13, 0.08);
+            color: #17120d;
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 720px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 22px;
+            background: rgba(250, 246, 239, 0.92);
+            border: 1px solid rgba(34, 20, 9, 0.08);
+        }
+
+        code {
+            padding: 2px 6px;
+            border-radius: 8px;
+            background: rgba(23, 18, 13, 0.08);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <span class="badge">Official support hub for Magic Pencil</span>
+            <h1>Draw on Safari with Apple Pencil, while fingers keep scrolling.</h1>
+            <p>Magic Pencil is an iPad Safari extension for fast, lightweight web annotation. Ink can fade away after a few seconds, last for the whole browsing session, or stay until the tab is refreshed.</p>
+            <div class="actions">
+                <a class="primary" href="./support.html">Open Support</a>
+                <a class="secondary" href="./privacy-policy.html">Privacy Policy</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>What It Does</h2>
+            <div class="grid">
+                <article class="card">
+                    <p><strong>Apple Pencil draws.</strong> Finger touches are left free for normal page scrolling.</p>
+                </article>
+                <article class="card">
+                    <p><strong>Volatile mode fades quickly.</strong> Choose short-lived ink for thought sketches that disappear on purpose.</p>
+                </article>
+                <article class="card">
+                    <p><strong>Session mode persists.</strong> Keep notes on the current page until refresh, navigation, or leaving Safari.</p>
+                </article>
+                <article class="card">
+                    <p><strong>Simple controls.</strong> Toggle black or white ink, change hold time, or clear the page from the Safari extension popup.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Need Help?</h2>
+            <p>For setup steps, troubleshooting, or direct contact, visit <a href="./support.html">Support</a> or email <a href="mailto:vusghwkd@snu.ac.kr">vusghwkd@snu.ac.kr</a>.</p>
+            <p>If you publish this site through GitHub Pages, your App Store Connect links can point to this page and its child pages, for example <code>/support.html</code> and <code>/privacy-policy.html</code>.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "applepencilonsafari Extension",
+        "message": "Magic Pencil",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is applepencilonsafari Extension. You should tell us what your extension does here.",
+        "message": "A volatile Apple Pencil overlay for Safari pages that lets Pencil draw while fingers keep scrolling.",
         "description": "Description of what the extension does."
     }
 }

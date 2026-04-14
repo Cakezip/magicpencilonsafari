@@ -1,0 +1,10 @@
+.DS_Store
+
+# Xcode build products
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Local scratch space
+tmp/

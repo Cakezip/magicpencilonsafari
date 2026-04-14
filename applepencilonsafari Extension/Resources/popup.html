@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="popup.css">
     <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <main class="popup">
+        <p class="eyebrow">Safari pencil overlay</p>
+        <h1>Magic Pencil</h1>
+        <p class="summary">Pencil draws. Fingers keep scrolling.</p>
+
+        <label class="toggle-row" for="enabled-toggle">
+            <span>Enable ink</span>
+            <input id="enabled-toggle" type="checkbox">
+        </label>
+
+        <section class="panel">
+            <p class="panel-title">Mode</p>
+            <div class="mode-grid" role="group" aria-label="Ink mode">
+                <button class="mode-button" data-persistence="volatile" type="button">Volatile</button>
+                <button class="mode-button" data-persistence="session" type="button">Session</button>
+            </div>
+        </section>
+
+        <section class="panel" id="ttl-panel">
+            <p class="panel-title">Hold time</p>
+            <div class="ttl-grid" role="group" aria-label="Fade timing">
+                <button class="ttl-button" data-ttl-ms="5000" type="button">5s</button>
+                <button class="ttl-button" data-ttl-ms="10000" type="button">10s</button>
+                <button class="ttl-button" data-ttl-ms="15000" type="button">15s</button>
+                <button class="ttl-button" data-ttl-ms="30000" type="button">30s</button>
+                <button class="ttl-button" data-ttl-ms="45000" type="button">45s</button>
+            </div>
+        </section>
+
+        <section class="panel">
+            <p class="panel-title">Ink color</p>
+            <div class="color-grid" role="group" aria-label="Ink color">
+                <button class="color-button" data-color="#111111" type="button">
+                    <span class="color-dot color-dot-black"></span>
+                    <span>Black</span>
+                </button>
+                <button class="color-button" data-color="#ffffff" type="button">
+                    <span class="color-dot color-dot-white"></span>
+                    <span>White</span>
+                </button>
+            </div>
+        </section>
+
+        <button class="clear-button" id="clear-button" type="button">Clear this page</button>
+        <p class="status" id="status-message" aria-live="polite"></p>
+    </main>
 </body>
 </html>

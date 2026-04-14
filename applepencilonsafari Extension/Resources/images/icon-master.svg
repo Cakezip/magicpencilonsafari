@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="138" y1="108" x2="874" y2="932" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECF5FF"/>
+      <stop offset="0.55" stop-color="#A8D0FF"/>
+      <stop offset="1" stop-color="#5B8EEB"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="281" y1="262" x2="745" y2="768" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCFEFF"/>
+      <stop offset="0.55" stop-color="#E0F0FF"/>
+      <stop offset="1" stop-color="#B9D8FF"/>
+    </linearGradient>
+    <linearGradient id="disc" x1="319" y1="290" x2="702" y2="731" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#15345D"/>
+      <stop offset="0.58" stop-color="#1B5694"/>
+      <stop offset="1" stop-color="#12315A"/>
+    </linearGradient>
+    <linearGradient id="pencilBody" x1="428" y1="390" x2="651" y2="611" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCFEFF"/>
+      <stop offset="1" stop-color="#DDE8F4"/>
+    </linearGradient>
+    <linearGradient id="pencilEdge" x1="441" y1="402" x2="641" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AFC2D7"/>
+      <stop offset="1" stop-color="#F7FAFE"/>
+    </linearGradient>
+    <filter id="shadow" x="96" y="88" width="832" height="848" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="26"/>
+      <feGaussianBlur stdDeviation="34"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0603922 0 0 0 0 0.172549 0 0 0 0 0.345098 0 0 0 0.2 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+    <clipPath id="clip">
+      <rect x="64" y="64" width="896" height="896" rx="214"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect x="64" y="64" width="896" height="896" rx="214" fill="url(#bg)"/>
+    <circle cx="262" cy="226" r="248" fill="white" fill-opacity="0.28"/>
+    <circle cx="804" cy="822" r="286" fill="#143764" fill-opacity="0.14"/>
+    <circle cx="512" cy="512" r="420" fill="white" fill-opacity="0.08"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="512" cy="486" r="250" fill="url(#ring)"/>
+    <circle cx="512" cy="486" r="194" fill="url(#disc)"/>
+    <circle cx="512" cy="486" r="166" fill="#214F84"/>
+    <circle cx="512" cy="486" r="138" fill="#184170"/>
+  </g>
+
+  <g opacity="0.88" stroke="#E7F3FF" stroke-width="12" stroke-linecap="round">
+    <path d="M512 252V292"/>
+    <path d="M512 680V720"/>
+    <path d="M278 486H318"/>
+    <path d="M706 486H746"/>
+    <path d="M346 320L372 346"/>
+    <path d="M652 626L678 652"/>
+    <path d="M346 652L372 626"/>
+    <path d="M652 346L678 320"/>
+  </g>
+
+  <circle cx="512" cy="486" r="20" fill="#EEF7FF"/>
+  <circle cx="512" cy="486" r="8" fill="#1A446F"/>
+
+  <g transform="rotate(-44 512 486)">
+    <rect x="478" y="292" width="68" height="278" rx="34" fill="url(#pencilBody)"/>
+    <rect x="486" y="302" width="52" height="258" rx="26" stroke="url(#pencilEdge)" stroke-width="8"/>
+    <rect x="478" y="260" width="68" height="54" rx="26" fill="#FFF6E7"/>
+    <rect x="478" y="240" width="68" height="32" rx="16" fill="#F2B36B"/>
+    <rect x="478" y="564" width="68" height="44" rx="18" fill="#CCD6E0"/>
+    <path d="M478 608H546L528 664C524 679 500 679 496 664L478 608Z" fill="#F6E8D2"/>
+    <path d="M494 648H530L520 694C517 707 507 707 504 694L494 648Z" fill="#303844"/>
+    <path d="M501 674H523L517 712C515 722 509 722 507 712L501 674Z" fill="#0B111A"/>
+  </g>
+
+  <path d="M404 598C425 612 448 622 472 628" stroke="#F6FBFF" stroke-width="14" stroke-linecap="round" opacity="0.35"/>
+  <path d="M566 358C588 372 609 392 625 416" stroke="#9FD1FF" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+</svg>

@@ -1,15 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <title>Magic Pencil</title>
     <link rel="stylesheet" href="../Style.css">
 </head>
-<body>
-    <img src="../Icon.png" width="128" height="128" alt="applepencilonsafari Icon">
-    <p>You can turn on applepencilonsafari’s Safari extension in Settings.</p>
+<body class="app-shell">
+    <main class="page">
+        <section class="hero card">
+            <div class="hero-copy">
+                <p class="eyebrow">Safari Extension Companion</p>
+                <h1>Magic Pencil</h1>
+                <p class="lede">Temporary Apple Pencil notes for Safari on iPad. Pencil draws. Fingers keep scrolling.</p>
+            </div>
+            <img class="hero-icon" src="../Icon.png" width="128" height="128" alt="Magic Pencil app icon">
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>What It Does</h2>
+                <p>Magic Pencil overlays temporary or session-long strokes on top of Safari web pages. Notes stay attached to the page while you scroll and can either fade away automatically or remain until the page session ends.</p>
+                <ul>
+                    <li>Apple Pencil for drawing</li>
+                    <li>Finger gestures for scrolling</li>
+                    <li>Volatile or session-long ink modes</li>
+                    <li>5s, 10s, 15s, 30s, or 45s hold times</li>
+                    <li>Black or white ink</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Turn It On</h2>
+                <ol>
+                    <li>Open <strong>Settings</strong> on iPad.</li>
+                    <li>Go to <strong>Apps &gt; Safari &gt; Extensions</strong>.</li>
+                    <li>Enable <strong>Magic Pencil</strong>.</li>
+                    <li>Allow it on the websites where you want to write.</li>
+                    <li>Return to Safari and reload the page once.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2>How To Use It</h2>
+            <div class="two-up">
+                <div>
+                    <h3>Draw</h3>
+                    <p>Touch the page with Apple Pencil and write directly on the article, search results, or any other normal web page.</p>
+                </div>
+                <div>
+                    <h3>Control</h3>
+                    <p>Open the extension popup in Safari to switch between volatile and session modes, pause the overlay, clear the page, switch ink color, or adjust fade duration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Privacy</h2>
+                <p>Magic Pencil is designed to stay on-device. It does not require sign in, accounts, analytics, advertising, or cloud sync for its core functionality.</p>
+                <a class="button-link" href="Privacy.html">Read the privacy policy</a>
+            </article>
+
+            <article class="card">
+                <h2>Support</h2>
+                <p>Use the quick troubleshooting guide for setup help, common issues, and what to check before contacting the publisher.</p>
+                <a class="button-link" href="Support.html">Open support</a>
+            </article>
+        </section>
+
+        <section class="card footnote-card">
+            <p class="footnote">This app contains a Safari Web Extension. It does not offer in-app purchases, advertising, or account-based features.</p>
+        </section>
+    </main>
 </body>
 </html>

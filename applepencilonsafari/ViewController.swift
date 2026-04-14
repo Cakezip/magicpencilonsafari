@@ -8,27 +8,43 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
+final class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
-    @IBOutlet var webView: WKWebView!
+    @IBOutlet private var webView: WKWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.webView.navigationDelegate = self
-        self.webView.scrollView.isScrollEnabled = false
+        webView.navigationDelegate = self
+        webView.scrollView.isScrollEnabled = true
+        webView.scrollView.contentInsetAdjustmentBehavior = .always
+        webView.configuration.userContentController.add(self, name: "controller")
 
-        self.webView.configuration.userContentController.add(self, name: "controller")
-
-        self.webView.loadFileURL(Bundle.main.url(forResource: "Main", withExtension: "html")!, allowingReadAccessTo: Bundle.main.resourceURL!)
-    }
-
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        // Override point for customization.
+        loadPage(named: "Main")
     }
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        // Override point for customization.
+        // Reserved for future native settings and diagnostics hooks.
     }
 
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction) async -> WKNavigationActionPolicy {
+        guard let url = navigationAction.request.url else {
+            return .cancel
+        }
+
+        if url.isFileURL {
+            return .allow
+        }
+
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        return .cancel
+    }
+
+    private func loadPage(named name: String) {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "html") else {
+            return
+        }
+
+        webView.loadFileURL(url, allowingReadAccessTo: Bundle.main.resourceURL!)
+    }
 }
